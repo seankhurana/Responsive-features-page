@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    transition: all 0.2ms ease;
+}
+body{
+    background-color: rgb(35, 34, 34);
+    }
+    .features_section{
+        width:100%;
+        max-width: 1200px;
+        margin:0 auto;
+        padding: 6rem 1rem;
+    }
+    .features_top{
+        text-align: center;
+    }
+    .features_top h1{
+        margin-bottom: 1rem;
+        color: rgb(255, 115, 0);
+        letter-spacing: 0.01rem;
+            }
+    .features_top p{
+        font-size:1.1rem;
+        color:rgb(255, 115, 0) ;
+        font-weight:100;
+    }
+    .feature_item{
+        display: flex;
+        background-color: white;
+        border: 1px whitesmoke;
+        border-radius:1rem;
+        width:45%;
+        margin-top: 2rem;
+    }
+    .features_container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;}
+
+     .feature_item i{
+               font-size:5rem;
+               padding-top: 2.5rem;
+               padding-left: 1.5rem;
+               color: navajowhite;
+            }
+    .featureitem_info{
+        padding: 1.5rem;
+    }
+    .featureitem_info h1{
+        color:rgb(255, 115, 0);
+        letter-spacing:0.1rem;
+        margin-bottom: 0.3rem;
+    }
+    .featureitem_info p{
+        color:rgb(187, 102, 33);
+        letter-spacing: 0.01rem;
+        font-weight: 100;
+    }
+    .feature_item:hover{
+        border: 3px solid orangered;
+        cursor: pointer;
+
+         }
+    .feature_item i{
+        transform: scale(1.05);
+    }
+    h1{
+        font-size: 10rem;
+    }
+    @media(max-width: 768px){
+     .features_container{
+        flex-direction: column;
+             }
+      .feature_item{
+        width:100%;
+      }       
+      h1{
+        font-size: 4rem;
+      }
+    }
